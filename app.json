@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/music/music",
+    "pages/vio/vio",
+    "pages/player/player",
+    "pages/search/search"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#d9b",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "/static/staticicons/zhuye.png",
+        "iconPath": "/static/staticicons/zhuye1.png"
+      },
+      {
+        "pagePath": "pages/vio/vio",
+        "text": "发现",
+        "selectedIconPath": "/static/staticicons/liebiao.png",
+        "iconPath": "/static/staticicons/liebiao1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "selectedIconPath": "/static/staticicons/yonghu.png",
+        "iconPath": "/static/staticicons/yonghu1.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

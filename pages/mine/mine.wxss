@@ -1,0 +1,228 @@
+.top {
+  width: 100%;
+  height: 500rpx;
+  /* 塌陷 */
+  overflow: hidden;
+  background-color: rgb(226, 223, 223);
+}
+
+/* 未登录状态  */
+/* 卡片 */
+.kapian {
+  position: relative;
+  flex-direction: column;
+  width: 600rpx;
+  height: 270rpx;
+  background-image: linear-gradient(to right bottom, #f3f0f0, #adada7, #3c3d3c);
+  margin: 50rpx auto 0;
+  border-radius: 15rpx 15rpx 0 0;
+}
+
+.kapianTopL {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+}
+
+.kapianTopL text:first-child {
+  font-size: 40rpx;
+  color: rgb(194, 181, 4);
+}
+
+.kapianTopL text:last-child {
+  display: inline;
+  position: absolute;
+  top: 60rpx;
+  left: 2rpx;
+  width: 800rpx;
+  font-size: 20rpx;
+}
+
+.kapianTopR button {
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 22rpx;
+  border-radius: 40rpx;
+  background-image: linear-gradient(to right bottom, #ecd1df, #b995a7);
+}
+
+.kapianBottom {
+  position: absolute;
+  top: 170rpx;
+  left: 20rpx;
+  font-size: 30rpx;
+}
+
+.kapianBottomL text:first-child {
+  font-size: 30rpx;
+  color: rgb(138, 131, 11)
+}
+
+.kapianBottomL text:last-child {
+  display: inline-block;
+  top: 190rpx;
+  left: 20rpx;
+  font-size: 22rpx;
+}
+
+.kapianBottomR {
+  position: absolute;
+  top: -10rpx;
+  right: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  color: rgb(234, 241, 243);
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 48rpx;
+  background-color: rgb(209, 134, 134);
+  border-radius: 50%;
+  word-wrap: break-word;
+  -moz-line-clamp: 2;
+}
+
+.kapianBottomR::after {
+  position: absolute;
+  top: 25rpx;
+  right: -40rpx;
+  content: '>';
+  color: white;
+  font-size: 40rpx;
+}
+
+.kapianBottomR text {
+  display: inline-block;
+  width: 70rpx;
+}
+
+/*  登录状态 */
+.denglu {
+  position: relative;
+  width: 100%;
+}
+
+.denglu image {
+  position: absolute;
+  top: 200rpx;
+  left: 20rpx;
+  width: 150rpx;
+  height: 150rpx;
+  background-color: rgb(124, 117, 117);
+  border-radius: 20rpx;
+}
+
+.username {
+  position: absolute;
+  top: 270rpx;
+  left: 200rpx;
+  font-size: 43rpx;
+  font-weight: 700;
+}
+
+/* 以上是卡片 */
+.ts>text {
+  display: inline-block;
+  margin: 20rpx 0;
+  width: 100%;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.btn {
+  width: 300rpx;
+  border-radius: 30rpx;
+  font-size: 30rpx;
+  color: white;
+  background-image: linear-gradient(to right bottom, #d8b7c8, #dd99bb, #d8b7c8);
+}
+
+/* 下半部分 */
+.bottom {
+  width: 100%;
+  height: 700rpx;
+  transition: all .6s ease-in-out;
+}
+
+.lis {
+  display: flex;
+  width: 100%;
+  height: 120rxp;
+  padding: 10rpx 0;
+  background-color: #ddb9cb;
+  border-top: 2px solid #dfb6ca;
+}
+
+.lieitem {
+  flex: 25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.lieitem text:first-child {
+  font-size: 50rpx;
+}
+
+.lieitem text:last-child {
+  font-size: 22rpx;
+}
+
+/*  最近播放  */
+.zuijin {
+  padding: 10rpx;
+  width: 100%;
+  height: 400rpx;
+  background-color: rgb(238, 234, 234);
+}
+
+.gundong {
+  display: flex;
+  flex-direction: row;
+  height: 260rpx;
+  border: 1rpx solid #d9b;
+  border-radius: 10rpx;
+}
+
+.gundong image {
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 10rpx;
+}
+
+.gundongItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rpx 5rpx;
+  width: 200rpx;
+}
+
+/* 设置相关 */
+.sets {
+  width: 100%;
+  margin-top: 10rpx;
+  background-color: #dd99bb;
+}
+
+.sets>text {
+  padding: 0 20rpx;
+  font-size: 30rpx;
+}
+
+.setsItem {
+  padding: 0 60rpx;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+  background-color: #e9c3d6;
+}
+
+.setsItem text:last-child {
+  float: right;
+}

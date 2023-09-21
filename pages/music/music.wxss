@@ -1,0 +1,41 @@
+.box {
+  width: 100%;
+}
+
+.title {
+  padding-left: 30rpx;
+  height: 100rpx;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  color: rgb(41, 40, 40);
+  background: rgb(214, 134, 88);
+}
+
+.content {
+  width: 100%;
+}
+
+.sv {
+  height: calc(100vh - 100rpx);
+}
+
+.sp {
+  display: flex;
+  margin: 2rpx 0;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(247, 243, 243);
+}
+
+.sp image {
+  padding: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+}
+
+.sp text {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: rgb(65, 62, 62);
+}

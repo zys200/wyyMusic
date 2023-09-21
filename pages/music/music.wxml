@@ -1,0 +1,11 @@
+<view class="box">
+  <view class="title">{{title}}</view>
+  <view class="content">
+    <scroll-view scroll-y class="sv">
+      <view class="sp" wx:for="{{HotDetailsLists}}" wx:key="id" bind:tap="toListen" data-ids="{{item.id}}" data-indexmuc="{{index}}">
+        <image src="{{item.al.picUrl}}" />
+        <text>{{item.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

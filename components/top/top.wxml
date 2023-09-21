@@ -1,0 +1,13 @@
+<view class="top">
+  <view class="more">
+    <text class="iconfont icon-liebiao2"></text>
+  </view>
+  <van-tabs class="to" bind:change="onChange" active="{{ name }}">
+    <van-tab title="音乐馆" name="音乐馆"></van-tab>
+    <van-tab title="发现" name="发现"></van-tab>
+    <van-tab title="我的" name="我的"></van-tab>
+  </van-tabs>
+  <view class="search" bind:tap="tosearch">
+    <text class="iconfont icon-sousuo"></text>
+  </view>
+</view>

@@ -1,0 +1,101 @@
+<view class="box">
+  <view class="top">
+    <!-- 未登录状态 -->
+    <view wx:if="{{!isLogin}}">
+      <view class="kapian" bind:tap="toLogin">
+        <view class="kapianTop">
+          <view class="kapianTopL">
+            <text>开通黑胶VIP</text>
+            <text>加入黑胶VIP，立享超17项专属特权</text>
+          </view>
+          <view class="kapianTopR">
+            <button>会员中心</button>
+          </view>
+        </view>
+        <view class="kapianBottom">
+          <view class="kapianBottomL">
+            <text>云音乐×喜马拉雅 全新上线</text>
+            <text>联合会员重磅来袭，限时8折优惠!</text>
+          </view>
+          <view class="kapianBottomR">
+            <text>联合会员</text>
+          </view>
+        </view>
+      </view>
+      <view class="ts">
+        <text>手机电脑多端同步，尽享海量高品质音乐</text>
+        <button class="btn" bind:tap="toLogin">点击登录</button>
+      </view>
+    </view>
+    <!-- 登录状态 -->
+    <view wx:else>
+      <view class="denglu">
+        <image src="{{userinfo.avatarUrl}}" mode="" />
+        <text class="username">{{userinfo.nickname}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="bottom" bindtouchstart="bts" bindtouchmove="btm" bindtouchend="bte" style="transform: translateY({{firw}}rpx);">
+    <view class="lis">
+      <view class="lieitem">
+        <text class="iconfont icon-xiaoxi"></text>
+        <text>我的消息</text>
+      </view>
+      <view class="lieitem">
+        <text class="iconfont icon-haoyou"></text>
+        <text>我的好友</text>
+      </view>
+      <view class="lieitem">
+        <text class="iconfont icon-zhuye"></text>
+        <text>主页</text>
+      </view>
+      <view class="lieitem">
+        <text class="iconfont icon-icon-"></text>
+        <text>装扮</text>
+      </view>
+    </view>
+    <!-- 最近播放 -->
+    <view class="zuijin">
+      <topList title='最近播放' nav="最近播放"></topList>
+      <scroll-view class="gundong" scroll-x enable-flex>
+        <view class="gundongItem" wx:if="{{zj.length}}">
+          <image src="/static/imgs/u=2021154196,2394303855&fm=193&f=GIF.jpg" mode="" />
+          <text>hh</text>
+        </view>
+        <view wx:else>
+          <text>暂无播放记录</text>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="sets">
+      <text>音乐服务</text>
+      <view class="setsItem">
+        <text>演出</text>
+        <text>></text>
+      </view>
+      <view class="setsItem">
+        <text>演出</text>
+        <text>></text>
+      </view>
+      <view class="setsItem">
+        <text>演出</text>
+        <text>></text>
+      </view>
+    </view>
+    <view class="sets">
+      <text>小工具</text>
+      <view class="setsItem">
+        <text>演出</text>
+        <text>></text>
+      </view>
+      <view class="setsItem">
+        <text>演出</text>
+        <text>></text>
+      </view>
+      <view class="setsItem">
+        <text>演出</text>
+        <text>></text>
+      </view>
+    </view>
+  </view>
+</view>

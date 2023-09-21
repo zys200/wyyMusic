@@ -1,0 +1,20 @@
+<view class="box">
+  <view class="zw"></view>
+  <text>欢迎回来</text>
+  <view class="inp">
+    <view class="inpItem">
+      <text>请输入账号</text>
+      <input type="text" placeholder="账号" bindinput="handleInput" id="email" auto-focus value="{{email}}" />
+    </view>
+    <view class="inpItem">
+      <text>请输入密码</text>
+      <input type="safe-password" placeholder="密码" password bindinput="handleInput" id="password" value="{{password}}" />
+    </view>
+  </view>
+  <button class="login" bind:tap="touches">登录</button>
+  <navigator url="#" class="wangji">忘记密码？</navigator>
+  <view class="more">
+    <text>还没有账号？</text>
+    <navigator url="#">马上注册</navigator>
+  </view>
+</view>

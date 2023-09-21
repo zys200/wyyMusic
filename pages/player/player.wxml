@@ -1,0 +1,34 @@
+<view class="box">
+  <view class="title">{{SongDetails.al.name}}</view>
+  <!-- 动画 -->
+  <view class="content">
+    <view class="top">
+      <view class="yuan"></view>
+      <image src="/static/images/needle.png" mode="" class="ti {{isPlay?'isPlay':''}}" />
+    </view>
+    <view class="bottom">
+      <image src="/static/images/disc.png" mode="" />
+      <view class="ci">
+        <image src="{{SongDetails.al.picUrl}}" mode="" class="{{isPlay?'centerImgs':''}}" />
+      </view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="latest">
+    <view class="jindu">
+      <view class="st">{{time1}}</view>
+      <view class="line">
+        <view class="innerline" style="width: {{nowWidth+'rpx'}}"></view>
+        <view class="ss" style="margin-left: {{nowWidth+'rpx'}}"></view>
+      </view>
+      <view class="et">{{time2}}</view>
+    </view>
+    <view class="player">
+      <text class="iconfont icon-24gl-repeat2"></text>
+      <text class="iconfont icon-shangyiqu101" bind:tap="sendType" id="sy"></text>
+      <text class="iconfont {{isPlay?'icon-bofang1':'icon-24gl-play'}}" bind:tap="start"></text>
+      <text class="iconfont icon-xiayiqu101" bind:tap="sendType" id="xy"></text>
+      <text class="iconfont icon-liebiao"></text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="box">
+  <top name="发现"/>
+  <view class="content">
+    <scroll-view scroll-x enable-flex class="sv" scroll-into-view="{{idList}}" scroll-with-animation>
+      <view wx:for="{{videoCategoryLists}}" wx:key="id" class="svItem  {{'a'+item.id === idList?'isActive':''}}" bind:tap="handleChange" id="{{'a'+ item.id}}" data-ids="{{item.id}}">
+        {{item.name}}
+      </view>
+    </scroll-view>
+    <scroll-view scroll-y class="sv2">
+      <block wx:for="{{vDataList}}" wx:key="id">
+        <image src="{{item.data.coverUrl}}" />
+        <text>{{item.data.description}}</text>
+      </block>
+    </scroll-view>
+  </view>
+</view>

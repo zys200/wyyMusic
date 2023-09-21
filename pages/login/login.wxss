@@ -1,0 +1,65 @@
+.box {
+  width: 100%;
+}
+
+.zw {
+  margin-top: 100rpx;
+}
+
+.box>text {
+  margin-top: 100rpx;
+  font-size: 60rpx;
+  margin-left: 80rpx;
+}
+
+.inp {
+  margin: 0 auto;
+  margin-top: 30rpx;
+  width: 80%;
+  height: 300rpx;
+  background-color: #ebd5e0;
+  overflow: hidden;
+  border-radius: 10rpx;
+}
+
+.inp text {
+  line-height: 50rpx;
+}
+
+.inpItem {
+  margin: 0 auto;
+  width: 80%;
+  height: 100rpx;
+  margin-top: 40rpx;
+  padding-left: 50rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.login {
+  margin: 30rpx auto;
+  width: 80%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 33rpx;
+  border-radius: 25rpx;
+  background-color: #d9b;
+}
+
+.wangji {
+  margin-left: 500rpx;
+  font-size: 20rpx;
+  color: cornflowerblue;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  margin-top: 460rpx;
+  text-align: center;
+  font-size: 22rpx;
+}
+
+.more navigator {
+  color: cornflowerblue;
+}

@@ -1,0 +1,50 @@
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  font-size: 40rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #d9b;
+}
+
+.more {
+  width: 100rpx;
+}
+
+/* van-tab */
+.to {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to .van-tab {
+  width: 150rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 26rpx;
+  color: rgb(201, 201, 197);
+  background-color: #dd99bb;
+}
+
+.to .van-tab--active .van-ellipsis {
+  height: 100rpx;
+  line-height: 95rpx;
+  font-size: 33rpx;
+  color: #fff;
+}
+
+.to .van-tabs__line {
+  display: none;
+}
+
+.search {
+  width: 100rpx;
+}

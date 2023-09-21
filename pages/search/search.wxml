@@ -1,0 +1,40 @@
+<view class="box">
+  <!-- 头部 -->
+  <view class="header">
+    <text class="iconfont icon-sousuo icons"></text>
+    <view class="inp">
+      <input type="text" name="" id="" placeholder="你想听什么歌" bindinput="inpsearch" />
+    </view>
+    <button bind:tap="toSearch">看看</button>
+  </view>
+  <!-- 预搜索 -->
+  <view class="res" wx:if="{{inpText}}">
+    <view class="resItem" wx:for="{{yusousuo}}" wx:key="id">
+      <text class="iconfont icon-sousuo icons"></text>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 搜索结果 -->
+  <block wx:if="{{searchList.length}}">
+    <view class="title">搜索结果</view>
+    <view class="searchRes">
+      <view class="srItem" wx:for="{{searchList}}" wx:key="id">
+        <image src="{{item.al.picUrl}}" mode="" />
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </block>
+  <!-- 热门歌曲 -->
+  <block wx:else>
+    <view class="title">
+      <text>热门歌曲</text>
+    </view>
+    <view class="hot">
+      <view class="hotItem" wx:for="{{hotList}}" wx:key="index">
+        <text>{{index+1}}</text>
+        <text>{{item.searchWord}}</text>
+        <image src="{{item.iconUrl}}" />
+      </view>
+    </view>
+  </block>
+</view>
